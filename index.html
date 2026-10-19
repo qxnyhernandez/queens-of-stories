@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover romance, fantasy, mystery, adventure, and Tagalog stories at Queens of Stories.">
+  <title>Queens of Stories — Every Story Has a Queen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><script src="books.js" defer></script><script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#library">Skip to stories</a>
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="crown">♛</span><span><strong>Queens of Stories</strong><small>Every story has a queen.</small></span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a class="nav-link active" href="index.html"><span>⌂</span> Home</a><a class="nav-link" href="#library"><span>▤</span> Browse</a><a class="nav-link" href="#library" id="myLibraryLink"><span>▣</span> My Library</a><a class="nav-link" href="#about"><span>▧</span> About</a></nav>
+    <div class="header-actions"><label class="search-box" aria-label="Search stories"><span>⌕</span><input id="searchInput" type="search" placeholder="Search stories, authors, or genres..."><button id="searchClear" aria-label="Clear search" type="button">⌕</button></label><button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch theme"><span>☼</span><span>☾</span></button><a class="profile-button" href="#about" aria-label="About Queens of Stories">♙</a></div>
+  </header>
+  <main>
+    <section class="hero" aria-label="Welcome to Queens of Stories">
+      <div class="hero-shade"></div><button class="hero-arrow hero-prev" id="heroPrev" aria-label="Previous feature">‹</button>
+      <div class="hero-copy"><p class="hero-kicker" id="heroKicker">WELCOME TO</p><h1 id="heroTitle">Queens of Stories<span class="hero-crown">♛</span></h1><p id="heroDescription">Discover a collection of stories that will make you laugh, cry, dream, and fall in love — one chapter at a time.</p><a class="hero-cta" href="#library">Explore Stories <span>›</span></a></div>
+      <div class="hero-book-stack" aria-hidden="true"><div class="stack-book book-a">ROMANCE</div><div class="stack-book book-b">FANTASY</div><div class="stack-book book-c">MYSTERY</div><div class="stack-book book-d">ADVENTURE</div><div class="stack-book book-e">DRAMA</div><div class="stack-note">Just<br>one more<br>chapter ♡</div><div class="stack-candle">♨</div></div>
+      <button class="hero-arrow hero-next" id="heroNext" aria-label="Next feature">›</button><div class="hero-dots" id="heroDots" aria-label="Hero slides"><button class="active" aria-label="Slide 1"></button><button aria-label="Slide 2"></button><button aria-label="Slide 3"></button><button aria-label="Slide 4"></button></div>
+    </section>
+    <section class="library-wrap" id="library">
+      <div class="genre-strip" id="genreFilters" aria-label="Filter by genre"><button class="genre-chip selected" data-genre="All">All</button></div>
+      <div class="section-title-row"><h2><span class="section-crown">♛</span><span id="sectionTitle">Featured Stories</span></h2><button class="view-all" id="viewAll" type="button">View All <span>→</span></button></div>
+      <p class="result-count" id="resultCount" aria-live="polite">Discover your next favorite story.</p>
+      <div class="book-grid" id="bookGrid"></div><p class="empty-message" id="emptyMessage" hidden>No stories found. Try another title or genre.</p>
+    </section>
+    <section class="about-section" id="about"><div class="about-crown">♛</div><p class="eyebrow">OUR LITTLE CORNER OF THE WORLD</p><h2>Every story has a queen.</h2><p>Queens of Stories is a digital story library created for readers who love getting lost in different worlds. Explore original one-chapter stories across romance, fantasy, mystery, adventure, drama, and more. With English and Tagalog stories, a simple reading experience, and new worlds to discover, there is always another story waiting for you.</p><a href="#library" class="about-link">Find your next read <span>→</span></a></section>
+  </main>
+  <footer class="footer"><a class="footer-brand" href="index.html">♛ Queens of Stories</a><span>Made for readers, dreamers, and story lovers. © 2026</span></footer>
+  <dialog id="detailsDialog" class="details-dialog"><button id="closeDialog" class="dialog-close" aria-label="Close details">×</button><div id="dialogContent"></div></dialog>
+</body></html>
